@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background: #e8491d;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#carousel2 {
+    width: 100%;
+}
+
+#carousel2 .carousel-item {
+    flex: 0 0 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#carousel2 .carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+@media (max-width: 768px) {
+    header > div,
+    footer > div,
+    section > div {
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+
+    header img,
+    footer img {
+      margin-bottom: 10px;
+    }
+
+    header h1,
+    footer h1 {
+      font-size: 20px !important;
+    }
+
+    header a,
+    footer a {
+      font-size: 0.9rem !important;
+    }
+
+    .carousel-item img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .carousel-item, .image-wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      #carousel {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #carousel img {
+        flex-shrink: 0;
+        width: 100vw;
+        height: auto;
+        scroll-snap-align: start;
+    }
+
+    /* How we work section */
+    section div[style*="width: 15%"] {
+      width: 80% !important;
+    }
+
+    /* Catching Days Icons */
+    section div[style*="gap: 40px"] {
+      flex-direction: column !important;
+      gap: 20px !important;
+    }
+
+    section img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: auto;
+        display: block;
+        object-fit: contain;
+        box-sizing: border-box;
+    }
+  }
