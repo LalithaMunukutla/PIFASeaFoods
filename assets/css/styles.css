@@ -45,6 +45,22 @@ nav a:hover {
     width: 100%;
 }
 
+.mission-catch-row {
+  display: flex;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.our-mission-section,
+.fresh-catch-section {
+  flex: 1 1 0;
+  max-width: 50%;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
 #carousel {
   width: 100%;
 }
@@ -175,6 +191,18 @@ nav a:hover {
       margin-left: auto !important;
       margin-right: auto !important;
       display: block !important;
+    }
+
+    .mission-catch-row {
+      flex-direction: column !important;
+      gap: 20px !important;
+      margin: 24px 8px 0 8px !important;
+    }
+    .our-mission-section,
+    .fresh-catch-section {
+      max-width: 100% !important;
+      min-width: 0 !important;
+      padding: 18px 10px 14px 10px !important;
     }
 
     #carousel .carousel-item {
